@@ -1,0 +1,57 @@
+
+[
+  {
+    "name": "Lin Dan",
+    "gender": "Male",
+    "nationality": "China",
+    "power": "1000",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "lin_dan"
+  },
+  {
+    "name": "Lee Chong Wei",
+    "gender": "Male",
+    "nationality": "Malaysia",
+    "power": "950",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "lee_chong_wei"
+  },
+  {
+    "name": "Kento Momota",
+    "gender": "Male",
+    "nationality": "Japan",
+    "power": "970",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "kento_momota"
+  },
+  {
+    "name": "Tai Tzu Ying",
+    "gender": "Female",
+    "nationality": "Chinese Taipei",
+    "power": "980",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "tai_tzu_ying"
+  },
+  {
+    "name": "Carolina Marin",
+    "gender": "Female",
+    "nationality": "Spain",
+    "power": "970",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "carolina_marin"
+  },
+  {
+    "name": "Akane Yamaguchi",
+    "gender": "Female",
+    "nationality": "Japan",
+    "power": "950",
+    "discipline": "Singles",
+    "partner": "N/A",
+    "imageId": "akane_yamaguchi"
+  }
+]
