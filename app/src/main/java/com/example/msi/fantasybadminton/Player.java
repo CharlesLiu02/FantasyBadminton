@@ -10,8 +10,9 @@ public class Player {
     private String discipline;
     private String partner;
     private String imageId;
+    private boolean ifDrawn;
 
-    public Player(String gender, String nationality, int power, String discipline, String partner, String imageId, String name) {
+    public Player(String gender, String nationality, int power, String discipline, String partner, String imageId, String name, boolean ifDrawn) {
         this.gender = gender;
         this.nationality = nationality;
         this.power = power;
@@ -19,6 +20,7 @@ public class Player {
         this.partner = partner;
         this.imageId = imageId;
         this.name = name;
+        this.ifDrawn = false;
     }
 
     public String getGender() {
@@ -75,5 +77,13 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isIfDrawn() {
+        return ifDrawn;
+    }
+
+    public void setIfDrawn(boolean ifDrawn) {
+        this.ifDrawn = ifDrawn;
     }
 }

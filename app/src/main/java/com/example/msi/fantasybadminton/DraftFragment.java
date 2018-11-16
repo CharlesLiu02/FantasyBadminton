@@ -49,9 +49,24 @@ public class DraftFragment extends Fragment {
         wireWidgets();
         setListeners();
 
-        textViewPlayerLeft.setText(draft.getPlayers().get(draft.getLeftPlayer()).getName());
-        textViewPlayerRight.setText(draft.getPlayers().get(draft.getRightPlayer()).getName());
-        textViewPlayerMiddle.setText(draft.getPlayers().get(draft.getMiddlePlayer()).getName());
+        textViewPlayerLeft.setText(draft.getPlayers().get(draft.getLeftPlayer()).getName() + "\n" +
+                "Power: " + draft.getPlayers().get(draft.getLeftPlayer()).getPower() + "\n" +
+                "Gender: " + draft.getPlayers().get(draft.getLeftPlayer()).getGender() + "\n" +
+                "Nationality: " + draft.getPlayers().get(draft.getLeftPlayer()).getNationality() + "\n" +
+                "Discipline: " + draft.getPlayers().get(draft.getLeftPlayer()).getDiscipline() + "\n" +
+                "Partner: " + draft.getPlayers().get(draft.getLeftPlayer()).getPartner());
+        textViewPlayerRight.setText(draft.getPlayers().get(draft.getRightPlayer()).getName() + "\n" +
+                "Power: " + draft.getPlayers().get(draft.getRightPlayer()).getPower() + "\n" +
+                "Gender: " + draft.getPlayers().get(draft.getRightPlayer()).getGender() + "\n" +
+                "Nationality: " + draft.getPlayers().get(draft.getRightPlayer()).getNationality() + "\n" +
+                "Discipline: " + draft.getPlayers().get(draft.getRightPlayer()).getDiscipline() + "\n" +
+                "Partner: " + draft.getPlayers().get(draft.getRightPlayer()).getPartner());
+        textViewPlayerMiddle.setText(draft.getPlayers().get(draft.getMiddlePlayer()).getName() + "\n" +
+                "Power: " + draft.getPlayers().get(draft.getMiddlePlayer()).getPower() + "\n" +
+                "Gender: " + draft.getPlayers().get(draft.getMiddlePlayer()).getGender() + "\n" +
+                "Nationality: " + draft.getPlayers().get(draft.getMiddlePlayer()).getNationality() + "\n" +
+                "Discipline: " + draft.getPlayers().get(draft.getMiddlePlayer()).getDiscipline() + "\n" +
+                "Partner: " + draft.getPlayers().get(draft.getMiddlePlayer()).getPartner());
         imageViewPlayerLeft.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getLeftPlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));
         imageViewPlayerRight.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getRightPlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));
         imageViewPlayerMiddle.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getMiddlePlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));
@@ -93,14 +108,29 @@ public class DraftFragment extends Fragment {
         return outputStream.toString();
     }
 
-    private class ChoosePlayer implements View.OnClickListener{
+    private class ChoosePlayer implements View.OnClickListener {
 
         @Override
         public void onClick(View v) {
             draft.nextRound();
-            textViewPlayerLeft.setText(draft.getPlayers().get(draft.getLeftPlayer()).getName());
-            textViewPlayerRight.setText(draft.getPlayers().get(draft.getRightPlayer()).getName());
-            textViewPlayerMiddle.setText(draft.getPlayers().get(draft.getMiddlePlayer()).getName());
+            textViewPlayerLeft.setText(draft.getPlayers().get(draft.getLeftPlayer()).getName() + "\n" +
+                    "Power: " + draft.getPlayers().get(draft.getLeftPlayer()).getPower() + "\n" +
+                    "Gender: " + draft.getPlayers().get(draft.getLeftPlayer()).getGender() + "\n" +
+                    "Nationality: " + draft.getPlayers().get(draft.getLeftPlayer()).getNationality() + "\n" +
+                    "Discipline: " + draft.getPlayers().get(draft.getLeftPlayer()).getDiscipline() + "\n" +
+                    "Partner: " + draft.getPlayers().get(draft.getLeftPlayer()).getPartner());
+            textViewPlayerRight.setText(draft.getPlayers().get(draft.getRightPlayer()).getName() + "\n" +
+                    "Power: " + draft.getPlayers().get(draft.getRightPlayer()).getPower() + "\n" +
+                    "Gender: " + draft.getPlayers().get(draft.getRightPlayer()).getGender() + "\n" +
+                    "Nationality: " + draft.getPlayers().get(draft.getRightPlayer()).getNationality() + "\n" +
+                    "Discipline: " + draft.getPlayers().get(draft.getRightPlayer()).getDiscipline() + "\n" +
+                    "Partner: " + draft.getPlayers().get(draft.getRightPlayer()).getPartner());
+            textViewPlayerMiddle.setText(draft.getPlayers().get(draft.getMiddlePlayer()).getName() + "\n" +
+                    "Power: " + draft.getPlayers().get(draft.getMiddlePlayer()).getPower() + "\n" +
+                    "Gender: " + draft.getPlayers().get(draft.getMiddlePlayer()).getGender() + "\n" +
+                    "Nationality: " + draft.getPlayers().get(draft.getMiddlePlayer()).getNationality() + "\n" +
+                    "Discipline: " + draft.getPlayers().get(draft.getMiddlePlayer()).getDiscipline() + "\n" +
+                    "Partner: " + draft.getPlayers().get(draft.getMiddlePlayer()).getPartner());
             imageViewPlayerLeft.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getLeftPlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));
             imageViewPlayerRight.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getRightPlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));
             imageViewPlayerMiddle.setImageResource(getResources().getIdentifier((draft.getPlayers().get(draft.getMiddlePlayer())).getImageId(), "drawable", "com.example.msi.fantasybadminton"));

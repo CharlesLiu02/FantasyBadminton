@@ -53,5 +53,59 @@
     "discipline": "Singles",
     "partner": "N/A",
     "imageId": "akane_yamaguchi"
+  },
+  {
+    "name": "Kevin Sanjaya Sukamuljo",
+    "gender": "Male",
+    "nationality": "Indonesia",
+    "power": "1000",
+    "discipline": "Doubles",
+    "partner": "Marcus Fernaldi Gideon",
+    "imageId": "kevin_sanjaya_sukamuljo"
+  },
+  {
+    "name": "Marcus Fernaldi  Gideon",
+    "gender": "Male",
+    "nationality": "Indonesia",
+    "power": "1000",
+    "discipline": "Doubles",
+    "partner": "Kevin Sanjaya Sukamuljo",
+    "imageId": "marucs_fernaldi_gideon"
+  },
+  {
+    "name": "Liu Yuchen",
+    "gender": "Male",
+    "nationality": "China",
+    "power": "970",
+    "discipline": "Doubles",
+    "partner": "Li Junhui",
+    "imageId": "liu_yuchen"
+  },
+  {
+    "name": "Li Junhui",
+    "gender": "Male",
+    "nationality": "China",
+    "power": "970",
+    "discipline": "Doubles",
+    "partner": "Liu Yuchen",
+    "imageId": "li_junhui"
+  },
+  {
+    "name": "Kim Astrup",
+    "gender": "Male",
+    "nationality": "Denmark",
+    "power": "930",
+    "discipline": "Doubles",
+    "partner": "Anders Skaarup Rasmussen",
+    "imageId": "kim_astrup"
+  },
+  {
+    "name": "Anders Skaarup Rasmussen",
+    "gender": "Male",
+    "nationality": "Denmark",
+    "power": "930",
+    "discipline": "Doubles",
+    "partner": "Kim Astrup",
+    "imageId": "anders_skaarup_rasmussen"
   }
 ]
